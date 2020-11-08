@@ -17,10 +17,10 @@ class SignupWebService {
         self.urlSession = urlSession
     }
     
-    func signup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping (SignupResponseModel?, SignupError?) -> Void) {
+    func signup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
         
         guard let url = URL(string: urlString) else {
-            // TODO: Create a unit test to test that a specific error message is returned is URL is nil
+            completionHandler(nil, SignupErrors.invalidRequestURLString)
             return
         }
         
@@ -39,7 +39,7 @@ class SignupWebService {
             if let data = data, let signResponseModel = try? JSONDecoder().decode(SignupResponseModel.self, from: data) {
                 completionHandler(signResponseModel, nil)
             } else {
-                completionHandler(nil, SignupError.responseModelParsingError)
+                completionHandler(nil, SignupErrors.invalidResponseModel)
             }
             
         }
