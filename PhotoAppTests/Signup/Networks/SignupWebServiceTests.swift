@@ -83,11 +83,13 @@ class SignupWebServiceTests: XCTestCase {
         // Arrange
         let expectation = self.expectation(description: "An empty request URL string expectation")
         sut = SignupWebService(urlString: "")
+        MockURLProtocol.error = SignupErrors.invalidRequestURLString
         
         // Act
         sut.signup(withForm: signFormRequestModel) { (signupResponseModel, error) in
             // Assert
             XCTAssertEqual(error, SignupErrors.invalidRequestURLString, "The signup() method did not return an expected error for an invalidRequestURLString error")
+            XCTAssertEqual(error?.localizedDescription, SignupErrors.invalidRequestURLString.localizedDescription)
             XCTAssertNil(signupResponseModel, "When an invalidRequestURLString takes place, the response model must be nil")
             expectation.fulfill()
         }
