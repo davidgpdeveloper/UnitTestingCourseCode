@@ -16,6 +16,9 @@
 		96BB489125500EDD001F4643 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB489025500EDD001F4643 /* PhotoAppTests.swift */; };
 		96BB489C25500EDD001F4643 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB489B25500EDD001F4643 /* PhotoAppUITests.swift */; };
 		96BB48AD2550134A001F4643 /* UserModelTets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB48AC2550134A001F4643 /* UserModelTets.swift */; };
+		96BB48DF25554FF7001F4643 /* SignupFormModalValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB48DE25554FF7001F4643 /* SignupFormModalValidatorTests.swift */; };
+		96BB48EA2555510C001F4643 /* SignupFormModalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB48E92555510C001F4643 /* SignupFormModalValidator.swift */; };
+		96CCD81C255555C100410FF1 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCD81B255555C100410FF1 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		96BB489B25500EDD001F4643 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		96BB489D25500EDD001F4643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96BB48AC2550134A001F4643 /* UserModelTets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTets.swift; sourceTree = "<group>"; };
+		96BB48DE25554FF7001F4643 /* SignupFormModalValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModalValidatorTests.swift; sourceTree = "<group>"; };
+		96BB48E92555510C001F4643 /* SignupFormModalValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModalValidator.swift; sourceTree = "<group>"; };
+		96CCD81B255555C100410FF1 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,8 @@
 				96BB488225500EDD001F4643 /* Assets.xcassets */,
 				96BB488425500EDD001F4643 /* LaunchScreen.storyboard */,
 				96BB488725500EDD001F4643 /* Info.plist */,
+				96BB48E92555510C001F4643 /* SignupFormModalValidator.swift */,
+				96CCD81B255555C100410FF1 /* SignupConstants.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -115,9 +123,10 @@
 		96BB488F25500EDD001F4643 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				96BB489025500EDD001F4643 /* PhotoAppTests.swift */,
 				96BB489225500EDD001F4643 /* Info.plist */,
+				96BB489025500EDD001F4643 /* PhotoAppTests.swift */,
 				96BB48AC2550134A001F4643 /* UserModelTets.swift */,
+				96BB48DE25554FF7001F4643 /* SignupFormModalValidatorTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -263,6 +272,8 @@
 			files = (
 				96BB487E25500EDC001F4643 /* ViewController.swift in Sources */,
 				96BB487A25500EDC001F4643 /* AppDelegate.swift in Sources */,
+				96BB48EA2555510C001F4643 /* SignupFormModalValidator.swift in Sources */,
+				96CCD81C255555C100410FF1 /* SignupConstants.swift in Sources */,
 				96BB487C25500EDC001F4643 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BB48DF25554FF7001F4643 /* SignupFormModalValidatorTests.swift in Sources */,
 				96BB48AD2550134A001F4643 /* UserModelTets.swift in Sources */,
 				96BB489125500EDD001F4643 /* PhotoAppTests.swift in Sources */,
 			);
