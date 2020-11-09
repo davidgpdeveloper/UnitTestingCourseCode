@@ -15,6 +15,10 @@ class MockSignupWebService: SignupWebServiceProtocol {
     func signup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
         
         isSignupMethodCalled = true
+        
+        let responseModel = SignupResponseModel(status: "Ok")
+        
+        completionHandler(responseModel, nil)
     }
 
 }
