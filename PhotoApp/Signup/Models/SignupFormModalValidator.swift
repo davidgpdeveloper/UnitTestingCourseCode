@@ -9,12 +9,22 @@ import Foundation
 import UIKit
 
 
-class SignupFormModalValidator {
+class SignupFormModalValidator: SignupModelValidatorProtocol {
     
     func isFirstNameValid(firstName: String) -> Bool {
         var returnValue = true
         
         if firstName.count < SignupConstants.firstNameMinLength || firstName.count > SignupConstants.firstNameMaxLength {
+            returnValue = false
+        }
+        
+        return returnValue
+    }
+    
+    func isLastNameValid(lastName: String) -> Bool {
+        var returnValue = true
+        
+        if lastName.count < SignupConstants.firstNameMinLength || lastName.count > SignupConstants.firstNameMaxLength {
             returnValue = false
         }
         
