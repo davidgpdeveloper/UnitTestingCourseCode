@@ -12,6 +12,7 @@ class MockSignupPresenter: SignupPresenterProtocol {
     
     var processUserSignupCalled = false
     
+    
     required init(formModalValidator: SignupModelValidatorProtocol, webservice: SignupWebServiceProtocol, delegate: SignupViewDelegateProtocol) {
         
         

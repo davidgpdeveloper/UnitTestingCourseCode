@@ -59,10 +59,16 @@ class SignupViewControllerTests: XCTestCase {
     func test_SignupViewController_WhenSignupButtonTapped_InvokesSignupProcess() {
         
         // Arrange
-        let mockSignupPresenter = MockSignupPresenter()
+        let mockSignupModelValidator = MockSignupModalValidator()
+        let mockSignupWebservice = MockSignupWebService()
+        let mockSignupViewDelegate = MockSignupViewDelegate()
+        
+        let mockSignupPresenter = MockSignupPresenter(formModalValidator: mockSignupModelValidator, webservice: mockSignupWebservice, delegate: mockSignupViewDelegate)
+        
+        sut.signupPresenter = mockSignupPresenter
         
         // Act
-        sut.signupButton.sendActions(for: .touchUpInside)
+        sut.signupButton.sendActions(for: .touchUpInside)        
         
         // Assert
         XCTAssertTrue(mockSignupPresenter.processUserSignupCalled, "The processUserSignup() was not called on a Presenter object when the signup button was tapped in a SignupViewController")
