@@ -27,13 +27,19 @@ class SignupViewControllerTests: XCTestCase {
     }
 
     
-    func test_SignupViewController_WhenCreated_HasRequiredTextFieldsEmpty() {
+    func test_SignupViewController_WhenCreated_HasRequiredTextFieldsEmpty() throws {
 
-        XCTAssertEqual(sut.userFirstNameTextField.text, "", "FirstName text field was not empty when the view controller initially loaded")
-        XCTAssertEqual(sut.userLastNameTextField.text, "", "LastName text field was not empty when the view controller initially loaded")
-        XCTAssertEqual(sut.userEmailTextField.text, "", "Email text field was not empty when the view controller initially loaded")
-        XCTAssertEqual(sut.userPasswordNameTextField.text, "", "Password text field was not empty when the view controller initially loaded")
-        XCTAssertEqual(sut.userRepeatPasswordNameTextField.text, "", "RepeatPassword text field was not empty when the view controller initially loaded")
+        let firstNameTextField = try XCTUnwrap(sut.userFirstNameTextField, "The firstNameTextField is not connected to an IBOutlet")
+        let lastNameTextField = try XCTUnwrap(sut.userLastNameTextField, "The userLastNameTextField is not connected to an IBOutlet")
+        let emailTextField = try XCTUnwrap(sut.userEmailTextField, "The userEmailTextField is not connected to an IBOutlet")
+        let passwordTextField = try XCTUnwrap(sut.userPasswordNameTextField, "The userPasswordNameTextField is not connected to an IBOutlet")
+        let repeatPasswordTextField = try XCTUnwrap(sut.userRepeatPasswordNameTextField, "The userRepeatPasswordNameTextField is not connected to an IBOutlet")
+        
+        XCTAssertEqual(firstNameTextField.text, "", "FirstName text field was not empty when the view controller initially loaded")
+        XCTAssertEqual(lastNameTextField.text, "", "LastName text field was not empty when the view controller initially loaded")
+        XCTAssertEqual(emailTextField.text, "", "Email text field was not empty when the view controller initially loaded")
+        XCTAssertEqual(passwordTextField.text, "", "Password text field was not empty when the view controller initially loaded")
+        XCTAssertEqual(repeatPasswordTextField.text, "", "RepeatPassword text field was not empty when the view controller initially loaded")
     }
 
 }

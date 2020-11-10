@@ -56,7 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="userEmailTextField" destination="KmC-3x-5c7" id="Q1x-EO-fUU"/>
-                        <outlet property="userFirstNameTextField" destination="NgH-Ff-aPi" id="wBO-5g-z0s"/>
+                        <outlet property="userFirstNameTextField" destination="NgH-Ff-aPi" id="aoU-RE-Tlu"/>
                         <outlet property="userLastNameTextField" destination="VuV-pM-rxA" id="4av-S6-6nr"/>
                         <outlet property="userPasswordNameTextField" destination="lTE-va-Yw8" id="SHn-qF-3u5"/>
                         <outlet property="userRepeatPasswordNameTextField" destination="T9q-Dl-RQD" id="McC-le-vh7"/>
