@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lNe-Bj-U3o">
-                                <rect key="frame" x="20" y="94" width="374" height="250"/>
+                                <rect key="frame" x="20" y="94" width="374" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgH-Ff-aPi">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -43,6 +43,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18A-hZ-Xzw">
+                                        <rect key="frame" x="0.0" y="270" width="374" height="30"/>
+                                        <color key="backgroundColor" red="0.28619012240000002" green="0.63895094389999996" blue="0.2744289935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="signupButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zmq-WZ-A34"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -55,6 +63,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signupButton" destination="18A-hZ-Xzw" id="aZ3-kz-tLA"/>
                         <outlet property="userEmailTextField" destination="KmC-3x-5c7" id="Q1x-EO-fUU"/>
                         <outlet property="userFirstNameTextField" destination="NgH-Ff-aPi" id="aoU-RE-Tlu"/>
                         <outlet property="userLastNameTextField" destination="VuV-pM-rxA" id="4av-S6-6nr"/>
