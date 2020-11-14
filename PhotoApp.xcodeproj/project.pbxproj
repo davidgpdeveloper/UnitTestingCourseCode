@@ -16,6 +16,10 @@
 		964FDD0E255FE470007BB454 /* TestingUITextFieldPropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964FDD0D255FE470007BB454 /* TestingUITextFieldPropertiesTests.swift */; };
 		96573DEB255A908E00ACF906 /* SignupViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96573DEA255A908E00ACF906 /* SignupViewControllerTests.swift */; };
 		96573DF6255A91BF00ACF906 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96573DF5255A91BF00ACF906 /* SignupViewController.swift */; };
+		965AAA6125605A8700A5813E /* TestingNavigationFilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965AAA6025605A8700A5813E /* TestingNavigationFilesVC.swift */; };
+		965AAA6625605AD100A5813E /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965AAA6525605AD100A5813E /* SecondVC.swift */; };
+		965AAA6B25605CB100A5813E /* TestingNavigationFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965AAA6A25605CB100A5813E /* TestingNavigationFilesTests.swift */; };
+		965AAA70256061B700A5813E /* SpyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965AAA6F256061B700A5813E /* SpyNavigationController.swift */; };
 		967E7D72255A9F9900159A3E /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E7D71255A9F9900159A3E /* MockSignupPresenter.swift */; };
 		967E7D77255AA01B00159A3E /* SignupPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E7D76255AA01B00159A3E /* SignupPresenterProtocol.swift */; };
 		967E7D7D255AB21F00159A3E /* LoadingViewControllerInUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E7D7C255AB21F00159A3E /* LoadingViewControllerInUnitTests.swift */; };
@@ -75,6 +79,10 @@
 		964FDD0D255FE470007BB454 /* TestingUITextFieldPropertiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUITextFieldPropertiesTests.swift; sourceTree = "<group>"; };
 		96573DEA255A908E00ACF906 /* SignupViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewControllerTests.swift; sourceTree = "<group>"; };
 		96573DF5255A91BF00ACF906 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		965AAA6025605A8700A5813E /* TestingNavigationFilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingNavigationFilesVC.swift; sourceTree = "<group>"; };
+		965AAA6525605AD100A5813E /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		965AAA6A25605CB100A5813E /* TestingNavigationFilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingNavigationFilesTests.swift; sourceTree = "<group>"; };
+		965AAA6F256061B700A5813E /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 		967E7D71255A9F9900159A3E /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		967E7D76255AA01B00159A3E /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
 		967E7D7C255AB21F00159A3E /* LoadingViewControllerInUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerInUnitTests.swift; sourceTree = "<group>"; };
@@ -168,6 +176,24 @@
 				96573DEA255A908E00ACF906 /* SignupViewControllerTests.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		965AAA5E25605A4100A5813E /* TestingNavigationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				965AAA6025605A8700A5813E /* TestingNavigationFilesVC.swift */,
+				965AAA6525605AD100A5813E /* SecondVC.swift */,
+			);
+			path = TestingNavigationFiles;
+			sourceTree = "<group>";
+		};
+		965AAA5F25605A7200A5813E /* TestingNavigationFilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				965AAA6A25605CB100A5813E /* TestingNavigationFilesTests.swift */,
+				965AAA6F256061B700A5813E /* SpyNavigationController.swift */,
+			);
+			path = TestingNavigationFilesTests;
 			sourceTree = "<group>";
 		};
 		967E7D7B255AB1FB00159A3E /* LoadingVCFiles */ = {
@@ -282,6 +308,7 @@
 		96BB487825500EDC001F4643 /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				965AAA5E25605A4100A5813E /* TestingNavigationFiles */,
 				9606254A255FDA7500A67D7E /* XCTAssertNotThrowTutorial */,
 				967E7D84255AB31600159A3E /* LoadingVCFiles */,
 				96ADDAB02557E31E00C9249F /* Signup */,
@@ -298,6 +325,7 @@
 		96BB488F25500EDD001F4643 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				965AAA5F25605A7200A5813E /* TestingNavigationFilesTests */,
 				964FDD0C255FE441007BB454 /* TestingUITextFieldProperties */,
 				9606254B255FDA8700A67D7E /* XCTAssertNotThrowTutorialTests */,
 				967E7D7B255AB1FB00159A3E /* LoadingVCFiles */,
@@ -504,9 +532,11 @@
 				96F02A1625593E8600857C1F /* SignupModelValidatorProtocol.swift in Sources */,
 				9606254D255FDAA400A67D7E /* SignupFormModelValidator2.swift in Sources */,
 				96ADDAA22557E0A800C9249F /* SignupFormRequestModel.swift in Sources */,
+				965AAA6625605AD100A5813E /* SecondVC.swift in Sources */,
 				96188814255948E800118022 /* SignupWebServiceProtocol.swift in Sources */,
 				96ADDA9D2557DFCE00C9249F /* SignupWebService.swift in Sources */,
 				96BB487C25500EDC001F4643 /* SceneDelegate.swift in Sources */,
+				965AAA6125605A8700A5813E /* TestingNavigationFilesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965AAA6B25605CB100A5813E /* TestingNavigationFilesTests.swift in Sources */,
 				96F02A02255937B900857C1F /* SignupPresenterTests.swift in Sources */,
 				967E7D9A255AB54800159A3E /* HomePageViewControllerTests.swift in Sources */,
 				96BB48DF25554FF7001F4643 /* SignupFormModalValidatorTests.swift in Sources */,
@@ -529,6 +560,7 @@
 				96ADDA982557DF4300C9249F /* SignupWebServiceTests.swift in Sources */,
 				96573DEB255A908E00ACF906 /* SignupViewControllerTests.swift in Sources */,
 				96BB489125500EDD001F4643 /* PhotoAppTests.swift in Sources */,
+				965AAA70256061B700A5813E /* SpyNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
