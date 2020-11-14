@@ -17,7 +17,6 @@ class SignupFormModelValidator2Tests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
     
     func test_FirstNameValidation_WhenInvalidCharacterProvided_ThrowsAnError() {
         
@@ -29,8 +28,7 @@ class SignupFormModelValidator2Tests: XCTestCase {
             
             XCTAssertEqual(errorThrown as? SignupError, SignupError.illigalCharactersFound)
         }
-  
-    }
+      }
     
     func test_FirstNameValidation_WhenInvalidCharacterProvided_ThrowsAnError_doCatchExample() {
         
@@ -49,11 +47,8 @@ class SignupFormModelValidator2Tests: XCTestCase {
             XCTFail("The isFirstNameValid() was supposed to throw the SignupError.illigalCharactersFound Error when illigal characters used. A different Error was thrown.")
             return
         }
-  
     }
-    
 
-    
     func test_FisrtNameValidation_WhenValidCharactersProvided_ThrowsNoErrors() {
         
         // Arrange
@@ -61,10 +56,7 @@ class SignupFormModelValidator2Tests: XCTestCase {
         
         // Act and Assert
         XCTAssertNoThrow(try sut.isFirstNameValid("Sergey"), "The isFirstNameValid should not have thrown an error when there are no illigal charracters provided.")
-        
     }
-    
-    
     
     func test_FisrtNameValidation_WhenValidCharactersProvided_ThrowsNoErrors_doCatchExample() {
         
@@ -72,15 +64,11 @@ class SignupFormModelValidator2Tests: XCTestCase {
         let sut = SignupFormModelValidator2()
         
         // Act and Assert
-
         do {
             let _ = try sut.isFirstNameValid("Sergey")
         } catch {
             XCTFail("The isFirstNameValid() was not supposed to throw an Error when a valid First Name value was provided.")
         }
-        
     }
-    
-    
     
 }
