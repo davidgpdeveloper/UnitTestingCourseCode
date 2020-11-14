@@ -24,7 +24,6 @@ class LoadingViewControllerInUnitTests: XCTestCase {
         // XIB
         sut2 = XIBBasedViewController()
         sut2.loadViewIfNeeded()
-        
     }
 
     override func tearDownWithError() throws {
