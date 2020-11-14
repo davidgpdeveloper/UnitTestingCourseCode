@@ -22,3 +22,8 @@ enum SignupErrors: LocalizedError, Equatable {
         }
     }
 }
+
+
+enum SignupError: Error {
+    case illigalCharactersFound
+}
