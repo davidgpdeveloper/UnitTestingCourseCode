@@ -49,18 +49,30 @@ extension SignupViewController: SignupViewDelegateProtocol {
     
     func successfullSignup() {
         
+        createAlertDialog(title: "Success",
+                          message: "The signup operation was successful",
+                          accessibilityIdentifier: "successAlertDialog")
+        
     }
     
     func errorHandler(error: SignupErrors) {
         
-        let alert = UIAlertController(title: "Error", message: "Your request could not be processed at this time.", preferredStyle: .alert)
+        createAlertDialog(title: "Error",
+                          message: "Your request could not be processed at this time.",
+                          accessibilityIdentifier: "errorAlertDialog")
+    }
+    
+    private func createAlertDialog(title: String, message: String, accessibilityIdentifier: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
         DispatchQueue.main.async {
-            alert.view.accessibilityIdentifier = "errorAlertDialog"
+            alert.view.accessibilityIdentifier = accessibilityIdentifier
             self.present(alert, animated: true, completion: nil)
         }
+        
     }
     
 }

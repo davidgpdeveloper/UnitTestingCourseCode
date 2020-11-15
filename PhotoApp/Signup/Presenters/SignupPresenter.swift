@@ -31,7 +31,7 @@ class SignupPresenter: SignupPresenterProtocol {
             return
         }
         
-        if !formModalValidator.doPasswordMatch(password: forModel.email, repeatPassword: forModel.repeatPassword) {
+        if !formModalValidator.doPasswordMatch(password: forModel.password, repeatPassword: forModel.repeatPassword) {
             delegate?.errorHandler(error: SignupErrors.invalidEmail)
             return
         }
