@@ -84,6 +84,8 @@
 		965AAA6A25605CB100A5813E /* TestingNavigationFilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingNavigationFilesTests.swift; sourceTree = "<group>"; };
 		965AAA6F256061B700A5813E /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 		965DFB71256143090012EEE2 /* PhotoApp-UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestPlan.xctestplan"; sourceTree = "<group>"; };
+		965DFB752561466C0012EEE2 /* PhotoApp-UnitTestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UnitTestsPlan.xctestplan"; sourceTree = "<group>"; };
+		965DFB76256146B00012EEE2 /* PhotoApp-MainTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PhotoApp-MainTestPlan.xctestplan"; path = "PhotoAppTests/PhotoApp-MainTestPlan.xctestplan"; sourceTree = "<group>"; };
 		967E7D71255A9F9900159A3E /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		967E7D76255AA01B00159A3E /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
 		967E7D7C255AB21F00159A3E /* LoadingViewControllerInUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerInUnitTests.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 		96BB486D25500EDC001F4643 = {
 			isa = PBXGroup;
 			children = (
+				965DFB76256146B00012EEE2 /* PhotoApp-MainTestPlan.xctestplan */,
 				96BB487825500EDC001F4643 /* PhotoApp */,
 				96BB488F25500EDD001F4643 /* PhotoAppTests */,
 				96BB489A25500EDD001F4643 /* PhotoAppUITests */,
@@ -326,6 +329,7 @@
 		96BB488F25500EDD001F4643 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				965DFB752561466C0012EEE2 /* PhotoApp-UnitTestsPlan.xctestplan */,
 				965AAA5F25605A7200A5813E /* TestingNavigationFilesTests */,
 				964FDD0C255FE441007BB454 /* TestingUITextFieldProperties */,
 				9606254B255FDA8700A67D7E /* XCTAssertNotThrowTutorialTests */,
