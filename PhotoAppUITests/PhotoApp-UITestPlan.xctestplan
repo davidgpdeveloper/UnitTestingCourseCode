@@ -2,9 +2,26 @@
   "configurations" : [
     {
       "id" : "0B89C28C-E14F-43E2-BDD0-B862C796121F",
-      "name" : "Configuration 1",
+      "name" : "Test Server 1 URL",
       "options" : {
-
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupUrl",
+            "value" : "http:\/\/appsdeveloperblog.com\/api\/v2\/signup-mock-service\/users"
+          }
+        ]
+      }
+    },
+    {
+      "id" : "BE34D863-6ADA-488A-A70F-59D9004D66CD",
+      "name" : "Test Server 2 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupURL",
+            "value" : "http:\/\/appsdeveloperblog.com:8080\/signup-mock-service\/users"
+          }
+        ]
       }
     }
   ],
