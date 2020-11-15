@@ -83,6 +83,7 @@
 		965AAA6525605AD100A5813E /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		965AAA6A25605CB100A5813E /* TestingNavigationFilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingNavigationFilesTests.swift; sourceTree = "<group>"; };
 		965AAA6F256061B700A5813E /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
+		965DFB71256143090012EEE2 /* PhotoApp-UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestPlan.xctestplan"; sourceTree = "<group>"; };
 		967E7D71255A9F9900159A3E /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		967E7D76255AA01B00159A3E /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
 		967E7D7C255AB21F00159A3E /* LoadingViewControllerInUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerInUnitTests.swift; sourceTree = "<group>"; };
@@ -341,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				96BB489B25500EDD001F4643 /* SignFlowUITests.swift */,
+				965DFB71256143090012EEE2 /* PhotoApp-UITestPlan.xctestplan */,
 				96BB489D25500EDD001F4643 /* Info.plist */,
 			);
 			path = PhotoAppUITests;
