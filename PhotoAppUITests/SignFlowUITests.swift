@@ -24,6 +24,9 @@ class SignFlowUITests: XCTestCase {
         app = XCUIApplication()
         
         app.launchArguments = ["-skipSurvey", "-debugServer"]
+        app.launchEnvironment = ["signupUrl":"http://appsdeveloperblog.com/api/v2/signup-mock-service/users",
+                                 "inAppPurchasesEnabled":"true",
+                                 "inAppAdsEnabled":"true"]
         
         app.launch()
         
